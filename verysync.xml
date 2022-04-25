@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>verysync</Name>
+  <Repository>jonnyan404/verysync</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8886]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/doushang/docker-tp/main/img/verysynclogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650719191</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8886</HostPort>
+        <ContainerPort>8886</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/&#x957F;&#x4E45;&#x4FDD;&#x5B58;/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/data" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk4/&#x957F;&#x4E45;&#x4FDD;&#x5B58;/</Config>
+  <Config Name="Port" Target="8886" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 8886" Type="Port" Display="always" Required="false" Mask="false">8886</Config>
+</Container>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>webdav</Name>
+  <Repository>ugeek/webdav:amd64</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/doushang/docker-tp/main/img/webdavlogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650890200</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>admin123</Value>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>admin</Value>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="&#x8DEF;&#x5F84;" Target="/media" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">wsdoshdav032048</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false">dou</Config>
+  <Config Name="port" Target="80" Default="80" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+</Container>
